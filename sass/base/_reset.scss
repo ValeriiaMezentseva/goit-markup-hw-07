@@ -43,6 +43,14 @@ button {
     border: 0;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -54,12 +62,4 @@ button {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
-
-.list {
-    list-style: none;
-}
-
-.link {
-    text-decoration: none;
 }

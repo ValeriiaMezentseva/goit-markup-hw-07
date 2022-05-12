@@ -6,10 +6,6 @@
     display: flex;
 }
 
-.team__list {
-    display: flex;
-}
-
 .team__item {
     width: 270px;
     background-color: var(--primary-white-color);
@@ -44,33 +40,3 @@
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
-
-
-.team-social {
-    display: flex;
-    justify-content: center;
-    margin-top: 16px;
-}
-
-.team-social__item+.team-social__item {
-    margin-left: 10px;
-}
-
-.team-social__link {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    fill: #afb1b8;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-        background-color: var(--accent-color);
-        fill: var(--primary-white-color);
-            }
-}
-

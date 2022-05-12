@@ -3,7 +3,7 @@
     align-items: center;
 }
 
-.sitenav {
+.site-nav {
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -12,11 +12,11 @@
     display: flex;
 }
 
-.sitenav__item:not(:last-child) {
+.site-nav__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.sitenav__link {
+.site-nav__link {
     display: block;
     color: var(--primary-text-color);
     font-weight: 500;
@@ -33,7 +33,7 @@
         }
 }
 
-.link.current {
+.site-nav__link--current {
     color: var(--accent-color);
     
        &::after {

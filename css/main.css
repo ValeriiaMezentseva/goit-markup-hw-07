@@ -90,6 +90,14 @@ button {
   border: 0;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -104,19 +112,11 @@ button {
   overflow: hidden;
 }
 
-.list {
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
-}
-
 .header {
   border-bottom: 1px solid #ececec;
 }
 
-.header-container {
+.header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,7 +147,7 @@ button {
           align-items: center;
 }
 
-.sitenav {
+.site-nav {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -158,11 +158,11 @@ button {
   display: flex;
 }
 
-.sitenav__item:not(:last-child) {
+.site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.sitenav__link {
+.site-nav__link {
   display: block;
   color: var(--primary-text-color);
   font-weight: 500;
@@ -176,15 +176,15 @@ button {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.sitenav__link:hover, .sitenav__link:focus {
+.site-nav__link:hover, .site-nav__link:focus {
   color: var(--accent-color);
 }
 
-.link.current {
+.site-nav__link--current {
   color: var(--accent-color);
 }
 
-.link.current::after {
+.site-nav__link--current::after {
   content: "";
   display: block;
   position: absolute;
@@ -317,12 +317,6 @@ button {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.features__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .features {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -383,11 +377,11 @@ button {
   letter-spacing: 0.03em;
 }
 
-.about-us {
+.section--no-padding-top {
   padding-top: 0;
 }
 
-.about-us__list {
+.about-us {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -438,12 +432,6 @@ button {
   display: flex;
 }
 
-.team__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .team__item {
   width: 270px;
   background-color: var(--primary-white-color);
@@ -479,7 +467,7 @@ button {
   color: var(--secondary-text-color);
 }
 
-.team-social {
+.socials-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -489,11 +477,11 @@ button {
   margin-top: 16px;
 }
 
-.team-social__item + .team-social__item {
+.socials-list__item + .socials-list__item {
   margin-left: 10px;
 }
 
-.team-social__link {
+.socials-list__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -511,7 +499,7 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-social__link:hover, .team-social__link:focus {
+.socials-list__link:hover, .socials-list__link:focus {
   background-color: var(--accent-color);
   fill: var(--primary-white-color);
 }
