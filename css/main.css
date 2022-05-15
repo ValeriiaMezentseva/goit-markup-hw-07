@@ -945,7 +945,7 @@ footer {
 }
 
 .modal-title {
-  width: 448px;
+  width: 100%;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -956,7 +956,7 @@ footer {
 }
 
 .modal-input {
-  width: 448px;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   -webkit-box-sizing: border-box;
